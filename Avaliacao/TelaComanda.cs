@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -87,8 +86,16 @@ namespace Avaliacao
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esse botão não funciona");
-            
+            DataTable dt = con.Retorna($"SELECT * FROM bd_avaliacao.tb_comanda WHERE numero = {txtNumero.Text}");
+
+            dgvDados.DataSource = dt;
+
+            txtVlrBebida.Text = dt.Rows[0]["valor_bebida"].ToString();
+            txtVlrPrato.Text = dt.Rows[0]["valor_prato"].ToString();
+            cbxBebida.Text = dt.Rows[0]["nome_bebida"].ToString();
+            cbxPrato.Text = dt.Rows[0]["nome_prato"].ToString();
+
+
         }
     }
 }

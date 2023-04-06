@@ -13,7 +13,7 @@ namespace Avaliacao
         static private string server = "localhost";
         static private string database = "bd_avaliacao";
         static private string usuario = "root";
-        static private string senha = "cursoads";
+        static private string senha = "admin";
 
         static public string strConn = $"server={server}; " +
             $"User Id={usuario}; database={database}; " +
