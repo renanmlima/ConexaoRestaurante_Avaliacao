@@ -1,4 +1,4 @@
-# TelaPedido-Restaurante
+# Tela de Pedidos - Restaurante
 
 Avaliação proposta pela professora Katia Fushita, da instituição UNIFAAT, no dia 06/04/2023.
 
