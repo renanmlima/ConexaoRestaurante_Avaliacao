@@ -44,6 +44,7 @@ namespace Avaliacao
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,7 +161,7 @@ namespace Avaliacao
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(32, 254);
+            this.btnSalvar.Location = new System.Drawing.Point(511, 174);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(114, 44);
             this.btnSalvar.TabIndex = 13;
@@ -172,7 +173,7 @@ namespace Avaliacao
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.OrangeRed;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(617, 254);
+            this.btnExcluir.Location = new System.Drawing.Point(631, 233);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(114, 44);
             this.btnExcluir.TabIndex = 14;
@@ -184,7 +185,7 @@ namespace Avaliacao
             // 
             this.btnPesquisar.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.Location = new System.Drawing.Point(415, 254);
+            this.btnPesquisar.Location = new System.Drawing.Point(631, 174);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(114, 44);
             this.btnPesquisar.TabIndex = 15;
@@ -196,7 +197,7 @@ namespace Avaliacao
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.GreenYellow;
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(215, 254);
+            this.btnAtualizar.Location = new System.Drawing.Point(511, 233);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(114, 44);
             this.btnAtualizar.TabIndex = 16;
@@ -204,11 +205,22 @@ namespace Avaliacao
             this.btnAtualizar.UseVisualStyleBackColor = false;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(32, 258);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(96, 40);
+            this.btnLimpar.TabIndex = 17;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // TelaComanda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 463);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnExcluir);
@@ -250,6 +262,7 @@ namespace Avaliacao
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 
